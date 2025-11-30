@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ASTROCROSS - A Journey Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00E0FF", // A vibrant cyan inspired by game UI
+              "background-light": "#0F172A", // Defaulting to a dark theme as it fits the space context
+              "background-dark": "#020617", // A deeper space blue/black for dark mode
+            },
+            fontFamily: {
+              display: ["Orbitron", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem", // 8px
+            },
+            boxShadow: {
+                'glow': '0 0 15px 5px rgba(0, 224, 255, 0.4), 0 0 5px 1px rgba(0, 224, 255, 0.6)',
+                'glow-hover': '0 0 25px 8px rgba(0, 224, 255, 0.5), 0 0 10px 2px rgba(0, 224, 255, 0.7)',
+            }
+          },
+        },
+      };
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white antialiased">
+<div class="relative min-h-screen w-full flex flex-col items-center justify-center p-4 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="A vibrant and colorful sci-fi landscape with a large planet with rings in a starry sky." class="w-full h-full object-cover opacity-40 dark:opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRNqPMGQeBn4Iwc_zkhWxQe424wuUBFwtwYWg8LBkhRfSZcKat392UD69NZW5kO6yr3mMqisUVNeQSgS_3OzpEctLqGDAKN8De9zAiubZra6Q1UkROsPkYf5jmQyIxuGbYf3ChsVrKlifaMQJFbMgy3P8HCjiZU4JAzTSxSiBt8cFSAGa8MSE43XcOcxPhhQAmu7rmbfD_bj-VDr8oXm-H-I2DGllW4e-6embAxyOqWGcAMdjFqGQyJ7bv-FxAJhQkLohuHuRcY5o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-background-light dark:from-background-dark dark:via-transparent dark:to-background-dark"></div>
+</div>
+<main class="relative z-10 flex flex-col items-center justify-center text-center w-full max-w-2xl mx-auto">
+<h1 class="text-6xl md:text-8xl font-black tracking-widest text-primary uppercase" style="text-shadow: 0 0 10px #00E0FF, 0 0 20px #00E0FF;">
+                ASTROCROSS
+            </h1>
+<p class="mt-2 text-xl md:text-2xl font-medium text-white/90 tracking-wider">A Journey Home</p>
+<div class="mt-16 w-full max-w-sm space-y-6">
+<a class="group block w-full px-8 py-5 text-2xl font-bold text-background-dark bg-primary rounded-lg shadow-glow transition-all duration-300 ease-in-out hover:bg-white hover:shadow-glow-hover hover:scale-105 transform" href="#">
+                    Play
+                </a>
+<a class="group block w-full px-8 py-4 text-xl font-semibold text-primary bg-primary/10 border-2 border-primary rounded-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-background-dark hover:scale-105 transform" href="#">
+                    Tutorials
+                </a>
+<a class="group flex items-center justify-center w-full px-8 py-4 text-xl font-semibold text-white/80 bg-white/5 border-2 border-white/20 rounded-lg transition-all duration-300 ease-in-out hover:bg-white/10 hover:border-white/40 hover:scale-105 transform" href="#">
+<span class="material-symbols-outlined mr-2">settings</span>
+                    Settings
+                </a>
+</div>
+<footer class="absolute bottom-6 text-sm text-white/50">
+<p>© 2024 AstroCross Studios. All rights reserved.</p>
+</footer>
+</main>
+</div>
+
+</body></html>

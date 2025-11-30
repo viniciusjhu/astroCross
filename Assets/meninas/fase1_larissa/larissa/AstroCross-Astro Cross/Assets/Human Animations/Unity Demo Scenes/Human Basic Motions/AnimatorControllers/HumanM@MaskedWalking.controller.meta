@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 79e8f3badd7277148919fa62cbf10a5d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154271
+  packageName: Human Basic Motions FREE
+  packageVersion: 2.4.1
+  assetPath: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic
+    Motions/AnimatorControllers/HumanM@MaskedWalking.controller
+  uploadId: 762152

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bb33803ddf2398a478e3218171d7c6fc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154271
+  packageName: Human Basic Motions FREE
+  packageVersion: 2.4.1
+  assetPath: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic
+    Motions/AnimatorControllers/HumanF@Run01_Backward.controller
+  uploadId: 762152

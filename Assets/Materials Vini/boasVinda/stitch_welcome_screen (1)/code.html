@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Tutorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- ToolBar -->
+<div class="flex justify-between gap-2 px-4 py-3">
+<div class="flex gap-2">
+<button class="p-2 text-slate-800 dark:text-white">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">TUTORIAL</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Learn the basics to master the game</p>
+</div>
+</div>
+<!-- Tabs -->
+<div class="pb-3">
+<div class="flex border-b border-slate-200 dark:border-slate-700 px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-slate-900 dark:text-white pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Movement</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Objectives</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Abilities</p>
+</a>
+</div>
+</div>
+<!-- Carousel -->
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch p-4 gap-4">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-slate-900/50 shadow-sm min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col bg-slate-100 dark:bg-slate-800" data-alt="Animated visual showing a character strafing left and right to dodge obstacles."></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">STRAFE LEFT &amp; RIGHT</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Use 'A' and 'D' to dodge obstacles in your path.</p>
+</div>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-slate-900/50 shadow-sm min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col bg-slate-100 dark:bg-slate-800" data-alt="Animated visual of a character jumping over a low barrier."></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">JUMP</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Use 'Spacebar' to leap over incoming barriers.</p>
+</div>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-slate-900/50 shadow-sm min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col bg-slate-100 dark:bg-slate-800" data-alt="Animated visual of a character sliding under a high obstacle."></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">SLIDE</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Use 'S' key to slide under hurdles.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SingleButton -->
+<div class="flex px-4 py-3 mt-auto">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 focus:ring-4 focus:ring-primary/30 transition-colors">
+<span class="truncate">Start Game</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
